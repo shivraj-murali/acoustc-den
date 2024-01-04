@@ -324,13 +324,24 @@
         font-size: 1.5rem;
     }
 
-    .main-title{
-        font-size: 4rem;
+
+    .sub-heading{
+        font-size: 3.5rem;
     }
+    .main-heading{
+        font-size: 5rem;
+    }
+
+
+
+
   
     #homepage {
       max-width: 100vw !important;
+    }
 
+    .main-heading{
+        font-size: 8rem;
     }
   
     .founder-img {
@@ -445,7 +456,12 @@
     html {
       font-size: 36%;
     }
-  
+    
+    .main-heading{
+        font-size: 8rem;
+    }
+
+
     .map {
       margin: 0 auto;
     }
@@ -464,5 +480,14 @@
     .contact-details {
       margin: 0 auto;
     }
+
+    
+    .sub-heading{
+        font-size: 2.8rem;
+    }
+    .main-heading{
+        font-size: 5.2rem;
+    }
+
   }
   
