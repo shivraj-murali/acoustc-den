@@ -39,7 +39,8 @@ html,body{
     overflow: hidden;
     padding: 4rem;
     overflow-x: hidden;
-    /* transform:scale(0);     */
+    /* transform:scale(0); */
+    width: 100vw;
 }
 
 /************************
@@ -124,7 +125,7 @@ ANIMATIONS
 Navbar
 ******************/
 .hamburgerMenu, .cross{
-    width: 3%;
+    width: 5rem;
     display: inline-block;
     position: fixed;
     right: 5%;
@@ -148,7 +149,7 @@ Navbar
 }
 
 .cross{
-    width: 0%;
+    width: 0;
     z-index: 10;
     display: block;
 }
@@ -396,7 +397,7 @@ section{
   What we Do
   ************************/
   .what-we-do {
-    padding: 0 2.5rem;
+    /* padding: 0 2.5rem; */
     overflow: hidden !important;
   }
   
@@ -410,6 +411,10 @@ section{
   
   .services {
     padding: 0 1.5rem;
+  }
+
+  .boder{
+    padding: 3rem;
   }
   
   .tert-heading {

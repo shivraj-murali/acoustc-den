@@ -3,7 +3,7 @@ new Splide('.splide', {
     perPage: 1,
     autoplay: false,
     pauseOnHover: true,
-    arrows: true,
+    arrows: false,
     pagination: false,
     speed: 1000,
     interval: 3000,
@@ -50,7 +50,7 @@ const menu = document.querySelector('.hamburgerMenu');
 
     menu.addEventListener("click", function(){
         gsap.to(".cross", {
-            width: "3%",
+            width: "5rem",
             // display: "none",
             duration: 1,
         }) 
@@ -88,7 +88,7 @@ const menu = document.querySelector('.hamburgerMenu');
 
     cross.addEventListener("click", function(){
         gsap.to(menu, {
-            width: "3%",
+            width: "5rem",
             // delay: 1,
             duration: 0.3,
             display: "block",
@@ -122,7 +122,7 @@ const menu = document.querySelector('.hamburgerMenu');
 
     links.addEventListener("click", function(){
         gsap.to(".hamburgerMenu", {
-            width: "3%",
+            width: "5rem",
             duration: 0.5,
             display: "block",
             delay:1,
@@ -150,7 +150,7 @@ const menu = document.querySelector('.hamburgerMenu');
 
     link2.addEventListener("click", function(){
         gsap.to(".hamburgerMenu", {
-            width: "3%",
+            width: "5rem",
             duration: 0.5,
             display: "block",
             delay:1,
@@ -178,7 +178,7 @@ const menu = document.querySelector('.hamburgerMenu');
 
     link3.addEventListener("click", function(){
         gsap.to(".hamburgerMenu", {
-            width: "3%",
+            width: "5rem",
             duration: 0.5,
             display: "block",
             delay:1,
@@ -204,7 +204,7 @@ const menu = document.querySelector('.hamburgerMenu');
 
     link4.addEventListener("click", function(){
         gsap.to(".hamburgerMenu", {
-            width: "3%",
+            width: "5rem",
             duration: 0.5,
             display: "block",
             delay:1,
@@ -230,7 +230,7 @@ const menu = document.querySelector('.hamburgerMenu');
 
     link5.addEventListener("click", function(){
         gsap.to(".hamburgerMenu", {
-            width: "3%",
+            width: "5rem",
             duration: 0.5,
             display: "block",
             delay:1,
@@ -256,7 +256,7 @@ const menu = document.querySelector('.hamburgerMenu');
 
     link6.addEventListener("click", function(){
         gsap.to(".hamburgerMenu", {
-            width: "3%",
+            width: "5rem",
             duration: 0.5,
             display: "block",
             delay:1,
@@ -282,7 +282,7 @@ const menu = document.querySelector('.hamburgerMenu');
 
     link7.addEventListener("click", function(){
         gsap.to(".hamburgerMenu", {
-            width: "3%",
+            width: "5rem",
             duration: 0.5,
             display: "block",
             delay:1,
