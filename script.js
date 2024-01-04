@@ -4,7 +4,7 @@ new Splide('.splide', {
     autoplay: false,
     pauseOnHover: true,
     arrows: false,
-    pagination: false,
+    pagination: true,
     speed: 1000,
     interval: 3000,
     easing: 'cubic-bezier(.42,.65,.27,.99)',
