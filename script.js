@@ -2,7 +2,7 @@ new Splide('.splide', {
     type: 'loop',
     perPage: 1,
     autoplay: false,
-    pauseOnHover: true,
+    pauseOnHover: false,
     arrows: false,
     pagination: true,
     speed: 1000,
@@ -24,36 +24,38 @@ const menu = document.querySelector('.hamburgerMenu');
             width: "100%",
             duration: 1,
             stagger: 0.5
-        }) 
-    }
-    )
-
-    menu.addEventListener("click", function(){
+        })
+        
         gsap.to(menu, {
             width: "0%",
             display: "none",
             // position: "relative",
             // delay: 1,
             // duration: 1,
-        }) 
+        })
+
+        gsap.to(".nav-list", {
+            display: "block",
+          })
     }
     )
 
-    menu.addEventListener("click", function(){
-        gsap.to(".nav-list", {
-           color: '#dadada',
-            delay: 1,
-            duration: 1,
-        }) 
-    }
-    )
+    // menu.addEventListener("click", function(){
+    //     gsap.to(".nav-list", {
+    //        color: '#dadada',
+    //         delay: 1,
+    //         duration: 1,
+    //     }) 
+    // }
+    // )
 
     menu.addEventListener("click", function(){
         gsap.to(".cross", {
             width: "5rem",
             // display: "none",
             duration: 1,
-        }) 
+        })
+        
     }
     )
 
@@ -75,6 +77,10 @@ const menu = document.querySelector('.hamburgerMenu');
             duration: 0.5,
             stagger: 0.5,
         }) 
+        gsap.to(".nav-list", {
+            display: "none",
+          })
+
     }
     )
 
@@ -110,6 +116,12 @@ const menu = document.querySelector('.hamburgerMenu');
             duration: 0.5,
             delay:1,
         })
+
+        gsap.to(".nav-list", {
+        display: "none",
+        delay: 0.8,
+        // duration: ,
+        })
     })
 
     links.addEventListener("click", function(){
@@ -137,6 +149,12 @@ const menu = document.querySelector('.hamburgerMenu');
             width: "0%",
             duration: 0.5,
             delay:1,
+        })
+
+        gsap.to(".nav-list", {
+        display: "none",
+        delay: 0.8,
+        // duration: ,
         })
     })
 
@@ -166,6 +184,12 @@ const menu = document.querySelector('.hamburgerMenu');
             duration: 0.5,
             delay:1,
         })
+
+        gsap.to(".nav-list", {
+        display: "none",
+        delay: 0.8,
+        // duration: ,
+        })
     })
 
     link3.addEventListener("click", function(){
@@ -191,6 +215,12 @@ const menu = document.querySelector('.hamburgerMenu');
             width: "0%",
             duration: 0.5,
             delay:1,
+        })
+
+        gsap.to(".nav-list", {
+        display: "none",
+        delay: 0.8,
+        // duration: ,
         })
     })
 
@@ -218,6 +248,12 @@ const menu = document.querySelector('.hamburgerMenu');
             duration: 0.5,
             delay:1,
         })
+
+        gsap.to(".nav-list", {
+        display: "none",
+        delay: 0.8,
+        // duration: ,
+        })
     })
 
     link5.addEventListener("click", function(){
@@ -244,6 +280,12 @@ const menu = document.querySelector('.hamburgerMenu');
             duration: 0.5,
             delay:1,
         })
+
+        gsap.to(".nav-list", {
+        display: "none",
+        delay: 0.8,
+        // duration: ,
+        })
     })
 
     link6.addEventListener("click", function(){
@@ -269,6 +311,12 @@ const menu = document.querySelector('.hamburgerMenu');
             width: "0%",
             duration: 0.5,
             delay:1,
+        })
+
+        gsap.to(".nav-list", {
+        display: "none",
+        delay: 0.8,
+        // duration: ,
         })
     })
 

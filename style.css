@@ -40,7 +40,7 @@ html,body{
     padding: 4rem;
     overflow-x: hidden;
     /* transform:scale(0); */
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 /************************
@@ -173,10 +173,10 @@ Navbar
 }
 
 .nav-list{
-  color: rgb(221, 221, 221) !important; 
+  color: rgb(221, 221, 221) ; 
     font-size: 5rem;
     list-style: none;
-    display: block; 
+    display: none; 
     font-family: 'Lora', serif;
     margin: 2rem;
     font-size: 3rem;
@@ -581,11 +581,10 @@ Testimony
         font-weight: 400;
         padding-top: 1rem !important;
         color: #003f3e;
-        text-align: center !important;
+        text-align: left !important;
         margin-top: -0.5rem;
         display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
+
     }
 
     .comments{
