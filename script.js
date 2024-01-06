@@ -8,14 +8,13 @@ new Splide('.splide', {
     speed: 1000,
     interval: 3000,
     easing: 'cubic-bezier(.42,.65,.27,.99)',
+    color: "black",
     breakpoints: {
         768: {
             perPage: 1,
         }
     }
 }).mount();
-
-
 
 
 const menu = document.querySelector('.hamburgerMenu');
