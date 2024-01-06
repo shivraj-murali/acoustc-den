@@ -23,47 +23,40 @@ const menu = document.querySelector('.hamburgerMenu');
         gsap.to(".nav-tab", {
             width: "100%",
             duration: 1,
-            stagger: 0.5
+            // delay: 0.5,
         })
+
         
         gsap.to(menu, {
             width: "0%",
             display: "none",
-            // position: "relative",
-            // delay: 1,
-            // duration: 1,
         })
 
+
         gsap.to(".nav-list", {
-            display: "block",
-          })
+            // position: "absolute",
+            // right: "-100%",
+            transform: "scale(1)",
+            stagger: 0.2,
+            duration: 0.5,
+        })
+
     }
     )
 
-    // menu.addEventListener("click", function(){
-    //     gsap.to(".nav-list", {
-    //        color: '#dadada',
-    //         delay: 1,
-    //         duration: 1,
-    //     }) 
-    // }
-    // )
 
     menu.addEventListener("click", function(){
         gsap.to(".cross", {
             width: "5rem",
-            // display: "none",
-            duration: 1,
+            duration: 0.5,
         })
-        
     }
     )
 
     menu.addEventListener("click", function(){
         gsap.to(".nav-list", {
            color: '#dadada',
-            // delay: 1,
-            duration: 1,
+            duration: 0.5,
         }) 
     }
     )
@@ -75,10 +68,11 @@ const menu = document.querySelector('.hamburgerMenu');
         gsap.to(".nav-tab", {
             width: "0%",
             duration: 0.5,
-            stagger: 0.5,
         }) 
         gsap.to(".nav-list", {
-            display: "none",
+            transform: "scale(0)",
+            duration: 0.1,
+            color: '#1d1d1d',
           })
 
     }
@@ -102,12 +96,6 @@ const menu = document.querySelector('.hamburgerMenu');
     }
     )
 
-    cross.addEventListener("click", function(){
-        gsap.to(".nav-list", {
-           color: '#1d1d1d',
-        }) 
-    }
-    )
 
     const links = document.querySelector('.list1')
     links.addEventListener("click", function(){
@@ -115,6 +103,7 @@ const menu = document.querySelector('.hamburgerMenu');
             width: "0%",
             duration: 0.5,
             delay:1,
+            stagger: 0.5,
         })
 
         gsap.to(".nav-list", {

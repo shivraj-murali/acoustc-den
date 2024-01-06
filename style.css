@@ -176,7 +176,8 @@ Navbar
   color: rgb(221, 221, 221) ; 
     font-size: 5rem;
     list-style: none;
-    display: none; 
+    display: block;
+    transform: scale(0); 
     font-family: 'Lora', serif;
     margin: 2rem;
     font-size: 3rem;
