@@ -28,16 +28,14 @@ const menu = document.querySelector('.hamburgerMenu');
         
         gsap.to(menu, {
             width: "0%",
-            display: "none",
+            // transform: "none",
         })
 
 
         gsap.to(".nav-list", {
-            // position: "absolute",
-            // right: "-100%",
             transform: "scale(1)",
             stagger: 0.2,
-            duration: 0.5,
+            duration: 0.2,
         })
 
     }
@@ -96,23 +94,23 @@ const menu = document.querySelector('.hamburgerMenu');
     )
 
 
-    const links = document.querySelector('.list1')
-    links.addEventListener("click", function(){
+    const link1 = document.querySelector('.list1')
+    link1.addEventListener("click", function(){
         gsap.to(".nav-tab", {
             width: "0%",
             duration: 0.5,
             delay:1,
-            stagger: 0.5,
         })
 
         gsap.to(".nav-list", {
-        display: "none",
-        delay: 0.8,
-        // duration: ,
+            transform: "scale(0)",
+            duration: 0.1,
+            color: '#1d1d1d',
+            delay:0.9,
         })
     })
 
-    links.addEventListener("click", function(){
+    link1.addEventListener("click", function(){
         gsap.to(".cross", {
            width: "0%",
             duration: 0.5,
@@ -120,7 +118,7 @@ const menu = document.querySelector('.hamburgerMenu');
         })
     })
 
-    links.addEventListener("click", function(){
+    link1.addEventListener("click", function(){
         gsap.to(".hamburgerMenu", {
             width: "5rem",
             duration: 0.5,
@@ -140,9 +138,10 @@ const menu = document.querySelector('.hamburgerMenu');
         })
 
         gsap.to(".nav-list", {
-        display: "none",
-        delay: 0.8,
-        // duration: ,
+            transform: "scale(0)",
+            duration: 0.1,
+            color: '#1d1d1d',
+           delay:0.9,
         })
     })
 
@@ -174,9 +173,10 @@ const menu = document.querySelector('.hamburgerMenu');
         })
 
         gsap.to(".nav-list", {
-        display: "none",
-        delay: 0.8,
-        // duration: ,
+            transform: "scale(0)",
+            duration: 0.1,
+            color: '#1d1d1d',
+            delay:0.9,
         })
     })
 
@@ -206,9 +206,10 @@ const menu = document.querySelector('.hamburgerMenu');
         })
 
         gsap.to(".nav-list", {
-        display: "none",
-        delay: 0.8,
-        // duration: ,
+            transform: "scale(0)",
+            duration: 0.1,
+            color: '#1d1d1d',
+            delay:0.9,
         })
     })
 
@@ -238,9 +239,10 @@ const menu = document.querySelector('.hamburgerMenu');
         })
 
         gsap.to(".nav-list", {
-        display: "none",
-        delay: 0.8,
-        // duration: ,
+            transform: "scale(0)",
+            duration: 0.1,
+            color: '#1d1d1d',
+            delay:0.9,
         })
     })
 
@@ -270,9 +272,10 @@ const menu = document.querySelector('.hamburgerMenu');
         })
 
         gsap.to(".nav-list", {
-        display: "none",
-        delay: 0.8,
-        // duration: ,
+            transform: "scale(0)",
+            duration: 0.1,
+            color: '#1d1d1d',
+            delay:0.9,
         })
     })
 
@@ -302,9 +305,10 @@ const menu = document.querySelector('.hamburgerMenu');
         })
 
         gsap.to(".nav-list", {
-        display: "none",
-        delay: 0.8,
-        // duration: ,
+            transform: "scale(0)",
+            duration: 0.1,
+            color: '#1d1d1d',
+            delay:0.9,
         })
     })
 
